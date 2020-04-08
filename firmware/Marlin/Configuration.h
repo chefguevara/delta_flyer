@@ -641,23 +641,23 @@
   #endif
 
   // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-  #define DELTA_PRINTABLE_RADIUS 90.0     // (mm)
+  #define DELTA_PRINTABLE_RADIUS 80.0     // (mm)
 
   // Center-to-center distance of the holes in the diagonal push rods.
-  #define DELTA_DIAGONAL_ROD 218.0        // (mm)
+  #define DELTA_DIAGONAL_ROD 234.0        // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 190.87            // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 186.63            // (mm) Get this value from G33 auto calibrate
 
-  #define DELTA_ENDSTOP_ADJ {-0.703, 0.000, -0.599 } // Get these values from G33 auto calibrate
+  #define DELTA_ENDSTOP_ADJ { 0.000, -0.482, -1.180 } // Get these values from G33 auto calibrate
 
   // Horizontal distance bridged by diagonal push rods when effector is centered.
-  #define DELTA_RADIUS 108.16              // (mm) Get this value from G33 auto calibrate
+  #define DELTA_RADIUS 107.16              // (mm) Get this value from G33 auto calibrate
 
   // Trim adjustments for individual towers
   // tower angle corrections for X and Y tower / rotate XYZ so Z tower angle = 0
   // measured in degrees anticlockwise looking from above the printer
-  #define DELTA_TOWER_ANGLE_TRIM { -1.500, 0.582, 0.918 } // Get these values from G33 auto calibrate
+  #define DELTA_TOWER_ANGLE_TRIM {  -0.495, 0.000, -0.202 } // Get these values from G33 auto calibrate
 
   // Delta radius and diagonal rod adjustments (mm)
   //#define DELTA_RADIUS_TRIM_TOWER { 0.0, 0.0, 0.0 }
@@ -1048,7 +1048,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 0, 27, -1.6 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, 27, -2.10 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1376,8 +1376,8 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 1              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
+  #define MESH_INSET 5            // Set Mesh bounds as an inset region of the bed
+  #define GRID_MAX_POINTS_X 6      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_MESH_EDIT_MOVES_Z     // Sophisticated users prefer no movement of nozzle

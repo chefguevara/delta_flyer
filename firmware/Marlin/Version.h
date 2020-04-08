@@ -1,4 +1,4 @@
-/**
+  /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
@@ -54,7 +54,7 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-//#define SOURCE_CODE_URL "https://github.com/MarlinFirmware/Marlin"
+#define SOURCE_CODE_URL "https://github.com/chefguevara/delta_flyer"
 
 /**
  * Default generic printer UUID.
